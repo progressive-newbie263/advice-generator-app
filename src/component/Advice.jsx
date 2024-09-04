@@ -30,17 +30,39 @@ function Advice() {
 
   return (
     //remember to set tailwind component
-    <div className="flex items-center justify-center h-fit w-[400px]">
-      <div className="">
-        <div className="">ADVICE #{advice.id}</div>
-        <div className="">"{advice.advice}"</div>
-        <div className="">
-          <img src="./src/images/pattern-divider-desktop.svg" alt="icon-divider" />
-        </div>
-        <button className={`advice-generator-button ${!isLoaded ? 'loading' : ''}`} onClick={adviceDisplay}>
-          <img src="./src/images/icon-dice.svg" alt="icon-submit" />
-        </button>
+    <div className="relative">
+      {/* 
+        text color: neon green/ hsl(150, 100%, 66%) 
+        tracking-[x em] is letter-spacing
+      */}
+      <span className="text-center text-[#52ffa8] text-xs tracking-[0.25em]"> 
+        ADVICE #{advice.id}
+      </span>
+
+      <div className="text-2xl font-bold mb-6 mt-4">
+        "{advice.advice}"
       </div>
+      
+      <div className="mb-8">
+        <img src="./src/images/pattern-divider-desktop.svg" alt="icon-divider" />
+      </div>
+      
+      {/*  bg-color: neon green/ 
+        hsl: hsl(150, 100%, 66%) or 
+        rgb: rgb(82, 255, 168) or
+        hex: #52ffa8
+
+        - idk why, but it does not allow to enter/ break the shadow into seperated line.
+      */}
+      <button className={`bg-[#52ffa8] absolute -bottom-[60px] right-[165px] rounded-full p-4 
+      transition-all ease-in-out delay-150 
+      hover:shadow-[0_0_15px_hsla(150,100%,66%,0.5),_0_0_15px_hsla(150,100%,66%,0.5),_0_0_15px_hsl(150,100%,66%,0.5)]
+      sm:right-[120px]
+        ${!isLoaded ? 'loading' : ''}`} 
+        onClick={adviceDisplay}
+      >
+        <img src="./src/images/icon-dice.svg" alt="icon-submit" />
+      </button>
     </div>
   );
 }
