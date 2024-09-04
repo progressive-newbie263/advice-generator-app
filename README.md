@@ -1,8 +1,12 @@
-# React + Vite
+# Building advice generator app using React+Vite, Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API source: https://api.adviceslip.com
 
-Currently, two official plugins are available:
+live site url: https://progressive-newbie263.github.io/advice-generator-app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+this is my first time working with an API project. It took me a while to get an idea how to do it. I was proper chuffed after finishing it, and i felt that i learnt a lot after doing this project
+
+Fixing svg image was really hard. after fixing up and down for a while, i ended up adding transform translate onto the svg image and somehow it worked.
+
+I would love you to take a look at my code and give me an idea of how to fix it.
+Much love!
