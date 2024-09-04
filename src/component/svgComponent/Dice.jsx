@@ -8,4 +8,4 @@ function Dice() {
   )
 }
 
-export default Dice;
+export default Dice

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import PdDesktop from "./svgComponent/pdDesktop.jsx";
 import Dice from "./svgComponent/Dice.jsx";
-import PdMobile from "./svgComponent/pdMobile.jsx";
+import PdMobile from "./svgComponent/PdMobile.jsx";
+import PdDesktop from "./svgComponent/PdDesktop.jsx";
 
 function Advice() {
   //useEffect (an empty array) only when the component mounts
